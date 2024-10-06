@@ -107,7 +107,7 @@ class MapHandler {
     }
 }
 
-const mapInstance = new MapHandler('map', [8.359735, 124.869206], 18);
+const mapInstance = new MapHandler('map', [8.359735, 124.869206],18);
 mapInstance.loadMarkers('applet-2.json');
 
 document.addEventListener('DOMContentLoaded', () => {
