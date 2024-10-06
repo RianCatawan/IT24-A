@@ -1,8 +1,8 @@
 [
     {
-        "latitude": 8.359735,
-        "longitude": 124.869206,
-        "message": "CCS Faculty Office"
+        "latitude":8.360275,
+        "longitude": 124.867548,
+        "message": "SC Building Office"
     },
     {
         "latitude": 8.359639,
@@ -10,8 +10,8 @@
         "message": "CCS Laboratory 1"
     },
     {
-        "latitude": 8.359554,
-        "longitude": 124.869153,
-        "message": "CCS Laboratory 2"
+        "latitude": 8.359155,
+        "longitude":  124.86858,
+        "message": "Bsba Building 2"
     }
 ]
