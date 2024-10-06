@@ -65,20 +65,23 @@
 </nav>
 
 <body>
-  <div style="display: flex; justify-content: center; margin-top: 10px;">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="🔍" aria-label="Search" style="width: 300px; height: 40px; border: 2px solid lightblue;">
-        <button class="btn btn-outline-success" type="submit" style="border: 2px solid lightblue;">Search</button>
-    </form>
-
+ 
     
-</div>
-    <div class="applet-container">
-        <h3>Leaflet Map Basics</h3>
+    <div class="container">
+        <h2>Leaflet Map</h2>
         <div id="map"></div>
-      
+        <div class="btn-container">
+          <h4 id="logCount">Attendance Count: </h4>
+          <button class="btn btn-primary" id="btn">SC Building</button>
+              <h4 id="logCountCCS">Attendance Count: </h4>
+              <button class="btn btn-primary" id="btn1">CSS Laboratory 1</button>
+                   <h4 id="logCountBA">Attendance Count: </h4>
+                   <button class="btn btn-primary" id="btn2">BA building</button>
+                      <div id="logContainer"></div> 
+                      <button class="btn btn-primary" id="btnclear">Clear</button>
+        </div>
+          
     </div>
-  
 <script>
 class LeafletMap {
 
