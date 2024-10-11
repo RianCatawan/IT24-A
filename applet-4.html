@@ -78,6 +78,33 @@
 <h1>   -   Emily Davis</h1>
 <h1>  -    James Brown</h1>
 <h1>   -   Jessica Wilson</h1>
+    <script>
+        function filterList() {
+            const query = document.getElementById('searchBar').value.toLowerCase();
+            const items = document.querySelectorAll('#itemList .list-group-item');
+
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    item.style.display = '';
+                    item.style.pointerEvents = 'auto'; // Make it clickable
+                    item.onclick = () => showInfo(item.textContent, item.dataset.info); // Add click event with info
+                } else {
+                    item.style.display = 'none';
+                    item.style.pointerEvents = 'none'; // Make it not clickable
+                    item.onclick = null; // Remove click event
+                }
+            });
+
+            // Show or hide the list based on the query
+            const itemList = document.getElementById('itemList');
+            itemList.style.display = query ? '' : 'none'; // Show list only if there's input
+        }
+
+        function showInfo(itemName, itemInfo) {
+            alert("You selected: " + itemName + "\nInfo: " + itemInfo);
+        }
+    </script>
 
  
 </body>
