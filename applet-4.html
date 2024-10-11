@@ -56,7 +56,23 @@
             </div>
         </div>
     </nav>
- 
+    <div class="container search-container">
+        <h1 class="text-center header">Search Name of Student</h1>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Search for Items</h4>
+                <input id="searchBar" type="text" class="form-control" placeholder="Type to search..." oninput="filterList()">
+                <ul id="itemList" class="list-group mt-3" style="display: none;">
+                    <li class="list-group-item" data-info="Studied : Northern Bukidnon State College ">Michael Johnson</li>
+                    <li class="list-group-item" data-info="Studied : Northern Bukidnon State College">Sarah Smith</li>
+                    <li class="list-group-item" data-info="Studied : Northern Bukidnon State College">Emily Davis</li>
+                    <li class="list-group-item" data-info="Studied : Northern Bukidnon State College">James Brown</li>
+                    <li class="list-group-item" data-info="Studied : Northern Bukidnon State College">Jessica Wilson</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
  
 </body>
 </html>
