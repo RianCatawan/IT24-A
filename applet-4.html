@@ -87,18 +87,18 @@
                 const text = item.textContent.toLowerCase();
                 if (text.includes(query)) {
                     item.style.display = '';
-                    item.style.pointerEvents = 'auto'; // Make it clickable
-                    item.onclick = () => showInfo(item.textContent, item.dataset.info); // Add click event with info
+                    item.style.pointerEvents = 'auto'; 
+                    item.onclick = () => showInfo(item.textContent, item.dataset.info);
                 } else {
                     item.style.display = 'none';
-                    item.style.pointerEvents = 'none'; // Make it not clickable
-                    item.onclick = null; // Remove click event
+                    item.style.pointerEvents = 'none';
+                    item.onclick = null; 
                 }
             });
 
-            // Show or hide the list based on the query
+          
             const itemList = document.getElementById('itemList');
-            itemList.style.display = query ? '' : 'none'; // Show list only if there's input
+            itemList.style.display = query ? '' : 'none';
         }
 
         function showInfo(itemName, itemInfo) {
