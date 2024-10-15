@@ -102,7 +102,7 @@ class MapHandler {
         };
 
         this.addMapMarker(...coords[building], `${building} building`);
-        this.attendanceCounts[building]++; // Increment the attendance count
+        this.attendanceCounts[building]++;
         this.updateLogCounts();
     }
 }
