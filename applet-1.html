@@ -10,6 +10,16 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>Applet 1 - Basic Events</title>
     <style>
+        body {
+     background-color: #f0f8ff;
+     
+         background-image: url('/33422-3840x2160-desktop-4k-one-piece-background.jpg');
+         background-position: center; /* Centers the image */
+         background-repeat: no-repeat; /* Prevents the image from repeating */
+         background-size: cover; /* Makes the image cover the entire element */
+           
+            
+         }
         .applet-container {
             margin-top: 1rem;
             margin-left: 2rem;
@@ -22,7 +32,7 @@
 
 <body>
  
-<nav class="navbar navbar-expand-lg" style="background-color: rgba(111, 155, 184, 0.847);">
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(255, 132, 0, 0.847);">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +48,11 @@
               Applets
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="applet-2.html">Leaflet and open street map</a></li>
-              <li><a class="dropdown-item" href="applet-1.html">event button logger</a></li>
-              <li><a class="dropdown-item" href="applet-4.html">dynamic elements</a></li>
-            </ul>
+              <li><a class="dropdown-item" href="/applet-0.html">Basic Event</a></li>
+              <li><a class="dropdown-item" href="/applet-2.html">Street Leaflet Map</a></li>
+              <li><a class="dropdown-item" href="/applet-1.html">Event Button Logger</a></li>
+              <li><a class="dropdown-item" href="/applet-4.html">dynamic elements</a></li>
+          </ul>
           </li>
         
       </div>
@@ -57,7 +68,7 @@
     </form>
 </div>
 
-<div class="applet-container">
+<div class="applet-container"style="color: white;">
     <h1 id="displayText">Data Collection</h1>
     <button class="btn btn-primary" onclick="showData()">Collect Data</button>
     <button class="btn btn-danger" onclick="clearData()">Clear Data</button>
