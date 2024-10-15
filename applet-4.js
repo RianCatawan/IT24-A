@@ -58,10 +58,10 @@ class StudentList {
     }
 }
 
-// Function to handle alert display
+
 function alertStudentInfo(name, program) {
     alert(`Student Name: ${name}\nProgram: ${program}`);
 }
 
-// Initialize the student list
+
 const studentList = new StudentList('applet-4.json');
