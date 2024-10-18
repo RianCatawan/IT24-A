@@ -52,8 +52,7 @@
               <li><a class="dropdown-item" href="/applet-2.html">Street Leaflet Map</a></li>
               <li><a class="dropdown-item" href="/applet-1.html">Event Button Logger</a></li>
               <li><a class="dropdown-item" href="/applet-4.html">dynamic elements</a></li>
-              <li><a class="dropdown-item" href="/applet-5.html">open Weather</a></li>
-            </ul>
+              <li><a class="dropdown-item" href="/applet-5.html">Open Weather</a></li>
           </ul>
           </li>
         
@@ -62,40 +61,41 @@
 
 </nav>
 
-
-<div style="display: flex; justify-content: center; margin-top: 10px;">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="🔍" aria-label="Search" style="width: 300px; height: 40px; border: 2px solid lightblue;">
-        <button class="btn btn-outline-success" type="submit" style="border: 2px solid lightblue;">Search</button>
-    </form>
+<body>
+  <div class="container" style="text-align: left; color: white;">
+    <h1 style="font-weight: bold; margin-top: 2rem;">OpenWeather App</h1>
+    <div class="row" style="margin-top: 2rem;">
+        <div class="col" style="flex: 1;">
+            <h3>ApiKey</h3>
+            <input type="text" id="apiInput" placeholder="Enter API key" />
+        </div>
+        <div class="col" style="flex: 1;">
+            <h3 style="margin-left: 1rem;">City Name</h3>
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <div style="display: flex; align-items: center; margin-top: 1rem;">
+                <button id="getWeatherBtn" class="btn btn-primary" style="margin-left: 1rem;">Get Weather</button>
+                <button id="getLocationBtn" class="btn btn-secondary" style="margin-left: 0.5rem;">Use My Location</button>
+            </div>
+        </div>
+    </div>
 </div>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div id="weatherCard" class="weather-card" style="display: none;  background: linear-gradient(to right, #ffa351, #ffbe7b);
+      border: 1px solid #ccc; border-radius: 8px; padding: 20px; margin-bottom: 3rem;">
+                      <br>
+                      <h2 id="cityName"></h2>
+                      <p id="temperature"></p>
+                      <p id="description"></p>
+                      <p id="humidity"></p>
+                      <p id="windSpeed"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-<div class="applet-container"style="color: white;">
-    <h1 id="displayText">Data Collection</h1>
-    <button class="btn btn-primary" onclick="showData()">Collect Data</button>
-    <button class="btn btn-danger" onclick="clearData()">Clear Data</button>
-    <h3>Collected Data:</h3>
-    <div id="dateTimeDisplay"></div>
-</div>
-
-<script>
-let dataArray = [];
-
-function showData() {
-    var currentDateTime = new Date().toLocaleString();
-    dataArray.push("Data collected on: " + currentDateTime);
-    updateDisplay();
-}
-
-function clearData() {
-    dataArray = [];
-    updateDisplay();
-}
-
-function updateDisplay() {
-    const dateTimeDisplay = document.getElementById('dateTimeDisplay');
-    dateTimeDisplay.innerHTML = dataArray.map(data => `<div>${data}</div>`).join('');
-}
-</script>
+      <script src="applet-5.js"></script>
 </body>
+
 </html>
